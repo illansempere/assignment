@@ -1,0 +1,88 @@
+
+/* .flex-container > div {
+    background-color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 0 100px;
+} */
+
+/* body {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+header {
+    background-color: lightblue;
+    flex: 1 0 100%;
+    
+}
+
+nav {
+    background-color: lightseagreen;
+    flex: 1 0 200px;
+    order: 1;
+}
+
+main {
+    background-color: lightskyblue;
+    flex: 1 0 500px;
+    order: 2;
+}
+
+aside {
+    background-color: limegreen;
+    flex: 1 0 200px;
+    order: 3;
+}
+
+footer {
+    background-color: lightpink;
+    flex: 1 0 100%;
+    order: 4;
+} */
+
+/* ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+li {
+    padding: 10px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+}
+
+header {
+    background-color: lightblue;
+    grid-column: 1/-1;
+    
+}
+
+nav {
+    background-color: lightseagreen;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+main {
+    background-color: lightskyblue;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+aside {
+    background-color: limegreen;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+footer {
+    background-color: lightpink;
+    grid-column: 1/-1;
+} */
