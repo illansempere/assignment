@@ -71,5 +71,6 @@ function createnotesArray() {
 }
 
 function save() {
-    
+    var written = textbox.value;
+    notesArray.push(note3 = {"title": `"${number}"`, "body": "null"});
 }
