@@ -51,7 +51,7 @@ function hide() {
 cancelbutton.addEventListener("click", hide);
 
 function clear() {
-    textbox.innerText = "";
+    textbox.value = "";
     
 }
 
