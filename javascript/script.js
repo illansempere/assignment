@@ -4,12 +4,17 @@ let savebutton = document.querySelector("#save");
 let newbutton = document.querySelector("#new");
 let textbox = document.querySelector("#text");
 let ul = document.querySelector("#notes");
+let aside = document.querySelector("#aside");
+
+
 
 function changetext() {
     if (darkbutton.innerText === "Dark Theme") { 
         darkbutton.innerText = "Light Theme";
+        aside.style.color = 'white';
     } else {
         darkbutton.innerText = "Dark Theme";
+        aside.style.color = 'black';
     }
 }
 
@@ -65,30 +70,41 @@ function show() {
 newbutton.addEventListener("click", show);
 
  
-const notesArray = [
-    note1 = {
+const notesArray = {
+    note1 : {
         "title": "note one",
         "body": "some text 1"
     },
-    note2 = {
+    note2 : {
         "title": "note two",
         "body": "some text 2"
-    }];
-
+    }};
 
 
 let count = 2;
+
 function save() {
     count += 1;
     let written = textbox.value;
     let title = written.slice(0,10);
     let body = written.slice(10);
     let note = `note${count}`;
-    notesArray.push(note = {"title": `"${title}"`, "body": `"${body}"`});
+    notesArray[note] = {"title": `${title}`, "body": `${body}`};
 
     let li = document.createElement("li");
     li.innerHTML = `${title}`;
     ul.appendChild(li);
+    li.id = `note${count}`;
+    li.addEventListener("click", links);
 }
 
 savebutton.addEventListener("click", save);
+
+
+function links() {
+    let id = this.id;
+    textbox.value = notesArray[id]["title"] + notesArray[id]["body"];
+}
+
+
+
